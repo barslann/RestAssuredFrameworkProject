@@ -17,4 +17,9 @@ public class ResponseValidations {
     public static void responseDataVal(String expData, String actualData){
         Assert.assertEquals(expData,actualData);
     }
+
+
+    public static void responseDataValid(String ExpData, String ActualData) {
+        Assert.assertEquals(ExpData, ActualData ); System.out.println("Response Data Validated");
+    }
 }

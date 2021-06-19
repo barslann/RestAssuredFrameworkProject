@@ -11,7 +11,8 @@ public class TC3 {
 
     public void deleteRequestTest(){
         HttpMethods http = new HttpMethods();
-        Response response = http.deleteRequest(ConfigurationReader.getProperty("url1"),"_D7YFDg");
+        Response response = http.deleteRequest(TC2.idValue,ConfigurationReader.getProperty("url1"));
         ResponseValidations.responseStatusLineCodeVal(200,response);
+        System.out.println("Data Deleted Succesfully : "+response.getStatusCode());
     }
 }
